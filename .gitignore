@@ -1,10 +1,10 @@
-<<<<<<< Updated upstream
-Strings/Reverse_strings.py
-=======
 
 Strings/ String_Anagram_Checker.py
 Strings/Palindrome_Checker.py
 Strings/String Reversal_&_Vowel_Removal.py
 Strings/strings_syntax.py
 Strings/Word_Frequency_Counter.py
->>>>>>> Stashed changes
+
+<<<<<<< Updated upstream
+Strings/Reverse_strings.py
+=======
