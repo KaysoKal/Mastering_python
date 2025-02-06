@@ -1,0 +1,24 @@
+Python List projects
+
+Easy 
+sum of the elements 
+
+Find the Maximum & Minimum of a list
+
+Reverse a List – Implement a function to reverse a list without using [::-1] or reverse().
+
+Sum of Even Numbers – Write a program that sums only the even numbers in a list
+
+medium 
+Find the Second Largest Number – Write a function to find the second largest number in a list without using sort().
+
+Pair Sum Problem – Given a list and a target sum, return all pairs of numbers that add up to the target
+
+Flatten a Nested List – Convert a nested list (e.g., [[1, 2], [3, 4], [5]]) into a flat list [1, 2, 3, 4, 5].
+
+Rotate List – Rotate a list n places to the right or left.
+
+Hard
+Find Duplicates – Write a function to return a list of duplicates from a given list without using sets or dictionaries.
+
+Find Duplicates – Write a function to return a list of duplicates from a given list without using sets or dictionaries.
