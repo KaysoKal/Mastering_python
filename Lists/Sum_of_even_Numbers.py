@@ -30,7 +30,7 @@ if __name__ == "__main__":
 """
 When doing list comphrension 
 expression The operation perfroming on each item 
-item: a varabible respsent each element 
+item: a varabible represent each element 
 iterable: what you looping with tuple, list, dict, string
 condition: what you filtering for the expresion 
 ex: example = [expression for item in iterable if condtion]
