@@ -3,7 +3,7 @@
 """ 
 plan 
 - read in user input 
-- only accept numbers 
+ - only accept numbers 
 - turn each strings of nubmers into int 
 - turn string to list 
 - operation to find the largest number first 
@@ -16,16 +16,23 @@ plan
 import string
 
 def ListOperation(SecondLargestNum):
-    fnum = 0
-    Snum = 0
-    numholder = 0
-    
+    largest = 0
+   
+    for num in SecondLargestNum:
+        if num > largest:
+            second_largest = largest  # Update second_largest before largest
+            largest = num  # Update largest
+        elif num > second_largest and num != largest:
+            second_largest = num  # Update second_largest if num is not equal to largest
+
+    return second_largest  # Return the second largest number
+
+""" 
     for j in range(2):
         if j == 0:  # First loop to find the largest number
             for i in SecondLargestNum:
                 if i > fnum:
                     fnum = i  # Update fnum to the largest number
-                    print(fnum)
                 else:
                     continue
             numholder = fnum  # Store the largest number in numholder
@@ -33,31 +40,11 @@ def ListOperation(SecondLargestNum):
             for i in SecondLargestNum:
                 if i != numholder and i > Snum:  # Only update Snum if i is not equal to fnum
                     Snum = i  # Update second largest number
-                    print(Snum)
                 else:
                     break  # Break after finding the second largest once
     
     return Snum  # Return the second largest number
 
-"""
- for j in range(2):
-        if j == 0:
-            for i in SecondLargestNum:
-                if i > fnum:
-                    fnum = i
-                    print(fnum)
-                else:
-                    continue
-            numholder = fnum
-        else:
-            for i in SecondLargestNum:
-                if numholder > Snum:
-                    Snum = i
-                    print(Snum)
-                else:
-                    break   
-    return(Snum)
-            # Figurre out how to pop the first largest number and then find the second largest number. maybe try a list comprhsension and maybe write down each process of the code 
 
 """
    
