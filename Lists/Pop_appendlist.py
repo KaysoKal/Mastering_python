@@ -9,6 +9,7 @@ After removing all the even numbers, append the remaining numbers to a new list.
 Key operations to use:
 pop() to remove elements during the loop.
 append() to add the remaining numbers to a new list.
+Completed 
 """
 def Oddnums(listN: list[int]) -> list[int]:
     newList = []
