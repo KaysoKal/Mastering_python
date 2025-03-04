@@ -1,0 +1,46 @@
+1. Beginner Level: Create a Set and Add/Remove Elements
+Problem:
+Write a program to:
+
+Create a set of numbers from 1 to 10.
+Add the number 11 to the set.
+Remove the number 5 from the set.
+Print the final set.
+Goal:
+
+Understand how to create sets, add elements using add(), and remove elements using remove() or discard().
+2. Intermediate Level: Filter Elements in a Set
+Problem:
+Write a function that:
+
+Takes a set of integers.
+Filters out all the even numbers.
+Returns a new set containing only the odd numbers.
+Hint:
+
+Use the filter() function or a set comprehension to filter elements based on conditions (in this case, odd numbers).
+Goal:
+
+Learn how to filter elements from a set using built-in functions like filter() or using set comprehensions.
+3. Advanced Level: Perform Set Operations and Combine Results
+Problem:
+You are given two sets:
+
+Set A: {1, 2, 3, 4, 5}
+Set B: {4, 5, 6, 7, 8}
+Write a program that:
+
+Creates both sets.
+Finds the union of both sets.
+Finds the intersection of both sets.
+Finds the difference between Set A and Set B.
+Finds the symmetric difference between Set A and Set B.
+Returns all the results as individual sets.
+Goal:
+
+Understand how to perform set operations like union, intersection, difference, and symmetric difference using methods like .union(), .intersection(), .difference(), and .symmetric_difference(), as well as the corresponding operators (|, &, -, ^).
+Summary of Operations:
+Add Elements: add()
+Remove Elements: remove(), discard()
+Filter Elements: filter() or set comprehensions
+Set Operations: .union(), .intersection(), .difference(), .symmetric_difference()

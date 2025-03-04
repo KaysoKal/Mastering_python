@@ -3,7 +3,7 @@
 """ 
 plan 
 - read in user input 
-- only accept numbers 
+ - only accept numbers 
 - turn each strings of nubmers into int 
 - turn string to list 
 - operation to find the largest number first 
@@ -13,22 +13,43 @@ plan
 
 """
 
-def ListOperation(SecondLargestNum):
-    fnum = SecondLargestNum[0]
-    for j in range(2):
-        for i in SecondLargestNum:
-            if i > fnum:
-                fnum = i
-            else:
-                continue
-            # Figurre out how to pop the first largest number and then find the second largest number. maybe try a list comprhsension and maybe write down each process of the code 
-        if j == 1:  
-            x = SecondLargestNum.index(fnum)
-            SecondLargestNum.pop(x)
-    return(fnum)
-
-
 import string
+
+def ListOperation(SecondLargestNum):
+    largest = 0
+   
+    for num in SecondLargestNum:
+        if num > largest:
+            second_largest = largest  # Update second_largest before largest
+            largest = num  # Update largest
+        elif num > second_largest and num != largest:
+            second_largest = num  # Update second_largest if num is not equal to largest
+
+    return second_largest  # Return the second largest number
+
+""" 
+    for j in range(2):
+        if j == 0:  # First loop to find the largest number
+            for i in SecondLargestNum:
+                if i > fnum:
+                    fnum = i  # Update fnum to the largest number
+                else:
+                    continue
+            numholder = fnum  # Store the largest number in numholder
+        else:  # Second loop to find the second largest number
+            for i in SecondLargestNum:
+                if i != numholder and i > Snum:  # Only update Snum if i is not equal to fnum
+                    Snum = i  # Update second largest number
+                else:
+                    break  # Break after finding the second largest once
+    
+    return Snum  # Return the second largest number
+
+
+"""
+   
+        
+
 def UserInput():
     while True:
         UserInput = input("Please enter numbers only: ") # take in user input 
