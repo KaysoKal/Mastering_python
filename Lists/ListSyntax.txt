@@ -9,6 +9,33 @@ Reverse a List – Implement a function to reverse a list without using [::-1] o
 
 Sum of Even Numbers – Write a program that sums only the even numbers in a list
 
+Intermediate Level: Removing Items with a Loop Using pop()
+Problem:
+You are given a list of integers, and you need to:
+
+Use a loop to traverse through the list.
+Remove all even numbers using the pop() method.
+After removing all the even numbers, append the remaining numbers to a new list.
+Key operations to use:
+pop() to remove elements during the loop.
+append() to add the remaining numbers to a new list.
+
+
+Intermediate Level: Filter and Modify a List of Dictionaries
+Problem:
+You are given a list of dictionaries representing students' information, where each dictionary contains the following keys:
+
+"name" (string)
+"age" (integer)
+"score" (integer)
+Write a function to filter out students who are younger than 18 and have a score below 50, and return the names of the remaining students as a list.
+
+You need to use filter(), map(), and lambda functions to solve this.
+
+
+
+
+Requires algorthims understanding 
 medium 
 Find the Second Largest Number – Write a function to find the second largest number in a list without using sort().
 
@@ -18,7 +45,3 @@ Flatten a Nested List – Convert a nested list (e.g., [[1, 2], [3, 4], [5]]) in
 
 Rotate List – Rotate a list n places to the right or left.
 
-Hard
-Find Duplicates – Write a function to return a list of duplicates from a given list without using sets or dictionaries.
-
-Find Duplicates – Write a function to return a list of duplicates from a given list without using sets or dictionaries.
