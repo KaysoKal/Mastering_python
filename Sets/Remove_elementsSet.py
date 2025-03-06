@@ -27,10 +27,10 @@ def UserInput() -> set:
 def main():
     print(remove_duplicates(UserInput())) 
     
- """
+""" 
 User input function (UserInput) returns num_in_set (the list of numbers) as the argument for the remove_duplicates function.
 The duplicate function (remove_duplicates) receives that argument as the parameter (input_list), processes it, and returns a set that contains only the unique numbers (removing any duplicates).
- """
+"""
 
 if __name__ == "__main__":
     main()

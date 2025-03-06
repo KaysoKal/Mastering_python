@@ -7,8 +7,16 @@ Add the number 11 to the set.
 Remove the number 5 from the set.
 Print the final set.
 Goal:
-
 Understand how to create sets, add elements using add(), and remove elements using remove() or discard().
+
+
+Problem: Remove Duplicates from a List
+Difficulty: Easy
+
+Description: Write a Python function that accepts a list of integers as input and returns a set 
+that contains only the unique elements of the list.
+
+
 2. Intermediate Level: Filter Elements in a Set
 Problem:
 Write a function that:
