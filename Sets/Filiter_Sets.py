@@ -14,34 +14,34 @@ Goal:
 Learn how to filter elements from a set using built-in functions like filter() or using set comprehensions.
 """
 
-def Filiter_set():
-    while True:
-        The_set = input("Please enter in a list of numbers: ") # this is a string
-        The_set = The_set.split()
-        # you having mistakes in any and list comprehsinsion remeber that the set start as a string first
-                
-        print(The_set)
+def User_input():
+    while True: #A continous loop for the input statment 
+        User_input = input("Please enter in a list of numbers: ")# this is a string. Prompt users to enter a list of numbers
+        try:
+            The_list = [int(num) for num in User_input.split()] #list comprehnsion. turn string to list and turn it into a int based off whitespace 
+            return The_list  
+        except ValueError: # if It not a int 
+           print("Only numbers can be enter")
+           
+    
+
+def Isodd(num):  
+    return num % 2 != 0  # Returns True for odd numbers, False for even numbers
+
+def Filiter_list(The_list):
+    The_list_update = set(filter(Isodd, The_list))
+    print(The_list_update)
+
+    
+
         
-
-        
-
-    
-        """ 
-            
-            for i in The_set:
-                if i % 2 != 0:
-                    return True
-                
-                else:
-                    return False
-        break
-    
-    The_set = filter(Filiter_set,The_set)
-    
-
-            """
 def main():
-    Filiter_set()
+    The_list = User_input()
+    Filiter_list(The_list)
+
+    
+    
+    
 
 if __name__ == "__main__":
     main()
