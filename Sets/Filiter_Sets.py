@@ -29,7 +29,7 @@ def Isodd(num):
     return num % 2 != 0  # Returns True for odd numbers, False for even numbers
 
 def Filiter_list(The_list):
-    The_list_update = set(filter(Isodd, The_list))
+    The_list_update = set(filter(Isodd, The_list)) # The Function filiter(function, iterable) the function filter through a list,tuple etc
     print(The_list_update)
 
     
