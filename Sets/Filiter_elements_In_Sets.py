@@ -15,33 +15,60 @@ Finds the symmetric difference between Set A and Set B. the result of diffrerenc
 Returns all the results as individual sets.
 """
 
-def Union(SetA, SetB: set) -> set:
-    return SetA.union(SetB)
- 
 
-def intersec(SetA, SetB: set) -> set:
-     return SetA.intersection(SetB)
-     #return SetI
+def Uinput():
+     while True:
+        try:
+            Userinput1 = input("Please First list of numbers: ") # string of numbers
+            Userinput1 = [int(x) for x in Userinput1.split()]
+            break
+        except ValueError:
+            print("Only numbers are allowed")
+     
+     while True:
+         try:
+             Userinput2 = input("Please second list of numbers: ") # string of numbers
+             Userinput2 = [int(x) for x in Userinput2.split()]
+             break
+         except ValueError:
+             print("Only numbers are allowed")
+             
+     return(Userinput1, Userinput2)
+         
+
+
+def DefineSet(SetA, SetB) -> set: 
+    return(f"Union of Both sets: {SetA.union(SetB)}\nIntersection of Both sets:{SetA.intersection(SetB)}\nDifference of A - B: {SetB.difference(SetA)}\nDifference of B - A: {SetA.difference(SetB)}\nThe Symmetric_difference in both set togther: {SetA.symmetric_difference(SetB)}")
+
+
+def Uni(UsetA, UsetB: list) -> set:
+    # filter through each list comebine them both together as one
+    UsetA, UsetB = set(UsetA), set(UsetB)
+    for i in UsetB:
+        UsetA.add(i)
+    return(UsetA)
     
-
-def diff(SetA, SetB: set) -> set:
-    return SetA.difference(SetB), SetB.difference(SetA)
-    
-
-def symmetric():
-    pass
-
 
 def main():
+     # create a user input set and try using a filiter and add and remove 
+    UsetA, UsetB = Uinput()
+    print(f"Union from userinput: {Uni(UsetA,UsetB)}")
+
+
     SetA = {1, 2, 3, 4, 5}
     SetB = {4, 5, 6, 7, 8}
-    print(f"Union of Both sets:",Union(SetA, SetB))
-    print(f"Intersection of Both sets:",intersec(SetA, SetB))
-    SetDA, SetDB = diff(SetA, SetB)
-    print(f"Difference of A - B: {SetDA}\nDifference of B - A: {SetDB}")
-    # note when you separate mutiple values python turn it into tuple when printing getting unhashable type error
-    # create a user input set and try using a filiter and add and remove 
+    print(DefineSet(SetA, SetB))
+
+
+    # use lambda for filter diffence or intersection
+   
     
 
 if __name__ == "__main__":
     main()
+    
+    
+"""
+  When a function returns multiple iterables in Python, they are combined into a tuple. This can lead to an 'unhashable type' error if the tuple is used in a context that requires a hashable type (e.g., as a set key).
+  To solve this, assign multiple iterables to separate variables before using them in a set or another hash-sensitive operation
+"""
