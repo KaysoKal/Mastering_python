@@ -48,12 +48,30 @@ def Uni(UsetA, UsetB: list) -> set:
         UsetA.add(i)
     return(UsetA)
     
+def intersect(UsetA, UsetB: list )-> set:
+    UsetA = sorted(UsetA)
+    UsetB = sorted(UsetB)
+    intersectSet = filter(func, zip(UsetA, UsetB))
+    
+    return set(pair[0] for pair in intersectSet)
+   
+    
+def func(pair):
+    # need to fix alorithm only if each element line up in each set
+    i, j = pair
+    return i == j
+    
+    
+    
+        
+        
+
 
 def main():
      # create a user input set and try using a filiter and add and remove 
     UsetA, UsetB = Uinput()
     print(f"Union from userinput: {Uni(UsetA,UsetB)}")
-
+    print(f"testtting: {intersect(UsetA, UsetB)}")
 
     SetA = {1, 2, 3, 4, 5}
     SetB = {4, 5, 6, 7, 8}
