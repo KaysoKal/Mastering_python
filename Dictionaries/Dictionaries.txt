@@ -1,3 +1,20 @@
+Easy: Basic Dictionary Operations
+Create a dictionary that stores three favorite foods and their prices.
+Retrieve the price of one specific food item from the dictionary.
+Add a new item to the dictionary with a price.
+Update the price of an existing item in the dictionary.
+Remove an item from the dictionary.
+
+
+
+Medium: Dictionary Iteration & Manipulation
+Print all keys and values in the dictionary in a formatted way.
+Check if a specific item exists in the dictionary before accessing it.
+Increase all prices by 10% and update the dictionary.
+Count how many items in the dictionary have a price greater than $5.
+Merge two dictionaries containing food items and their prices.
+
+
 Intermediate Level: Filter and Modify a List of Dictionaries
 Problem:
 You are given a list of dictionaries representing students' information, where each dictionary contains the following keys:
@@ -8,3 +25,18 @@ You are given a list of dictionaries representing students' information, where e
 Write a function to filter out students who are younger than 18 and have a score below 50, and return the names of the remaining students as a list.
 
 You need to use filter(), map(), and lambda functions to solve this.
+
+
+
+Hard: Nested Dictionaries & Complex Operations
+Create a nested dictionary where each item has a price and a stock quantity.
+inventory = {
+    "apple": {"price": 1.20, "stock": 10},
+    "milk": {"price": 3.00, "stock": 5},
+}
+Find the total cost if you were to buy one of each item in the dictionary.
+Sort the dictionary by price in ascending order and print the results.
+Convert the dictionary to a list of tuples (item, price) and sort by price.
+Remove all items from the dictionary that have a price below $2
+
+
