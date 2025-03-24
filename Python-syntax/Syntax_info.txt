@@ -1,0 +1,111 @@
+Define
+
+functions 
+
+parameters 
+- the variables defined in a function's declaration
+
+arugments
+-  the variables you pass to the function when calling 
+
+data types
+
+strings 
+
+f strings 
+":" allows to apply format options to output 
+".2f" allows you to be spefic on the decimal placement
+
+back characters
+
+loops
+
+Data collection types
+ can be a comprehension
+ syntax new data type = {expression for item in interable if condition} or  [expression for item in interable if condition] etc
+ can be generator Expression
+
+ comprehension vs generator expression
+  - comprehension
+    better to store all results
+    resuing data multiple times
+
+  - generator expression 
+    Better memeory efficency
+    itereating over a larger dataset
+    processing data once
+
+
+    list
+- syntax [] 
+- order collection of items that are mutable and indexing 
+
+    list/ tuple looping
+- can use emuerate or range(len())
+- accessing value, when looping you can get the value by listname[what you inizitalize with] varaible
+- accessing the index it just the inizitalize varaible 
+- adding depends on the type of data collection
+
+    tuples 
+- syntax () 
+- order collecion that are not mutable (constant)
+- same as list for accessing index or elements 
+
+    sets 
+- syntax {}
+- Unorderd collection of unique items but can add and remove elements
+- no indexing 
+- But mutable
+
+    dictionaries
+- as known as maps, hashmaps because you mapping keys to values 
+- ordered, changable and no Duplicates for key values but Duplicates for values and values can be any data collection
+- syntax : my_dict = {} ; my_dict = {key: value, key: value}
+- operations access using dictname[key value] : to get list of keys or values; .keys() or .values()
+- adding values : mydict[key] = value
+- to get a certain pair from a index: assignment name = list(dictname.items())[what index #] // index number always start at zero
+- items method return a tuple list 
+- 
+
+
+built in function 
+
+zip
+pair elements for multiple iterables 
+- syntax: zipped = zip(names, ages) 
+ 
+lambda
+Its an Anonymous function without having to def a name for it, can take a number of args but only one expression!
+ - syntax: lambda arguments: expression 
+    exampe: add = lambda x, y: x + y
+    print(add(2, 3))  # Output: 5
+ 
+filter
+filter elements through iterable
+- syntax: filter(function, iterable)
+    example: numbers = [1, 3, 5, 7, 9, 2]
+    filtered = filter(lambda x: x >= 5, numbers)
+
+
+Error handling 
+
+Enumerate 
+- for index, x in enumerate(a, start=1)
+- lets you add a counter to each item in a data collection type in a loop. counter always start at 0
+
+
+Git Commands (Gotta Try)
+git init – Initialize a Git repo.
+git status – View changes and staging status.
+git add . – Stage changes for commit.
+git commit -m "message" – Commit changes with a message.
+git push – Push changes to remote.
+git pull – Pull updates from remote.
+git branch <branch-name> – Create a new branch.
+git checkout <branch-name> – Switch between branches.
+git merge <branch-name> – Merge branches
+git diff : Shows the differences between the working directory and the index (staging area) or between commits
+git log : Shows a list of all commits in your current branch.
+
+notes i made a new git repo on accident as github, Need to understand how to use the termninal and either merage and keep my commits of orginal pyhton master and  strucre it better on git hub like how it is on vscode
+Check chatgpt dictionary price update on how to do that 
