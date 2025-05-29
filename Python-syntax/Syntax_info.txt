@@ -95,12 +95,13 @@ Enumerate
 
 
 Git Commands (Gotta Try)
+to get your repo from git hub "copy link into terminal. then place it in git clone
 git init – Initialize a Git repo.
 git status – View changes and staging status.
 git add . – Stage changes for commit.
 git commit -m "message" – Commit changes with a message.
 git push – Push changes to remote.
-git pull – Pull updates from remote.
+git pull – Pull latest updates from remote.
 git branch <branch-name> – Create a new branch.
 git checkout <branch-name> – Switch between branches.
 git merge <branch-name> – Merge branches
