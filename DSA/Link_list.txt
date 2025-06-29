@@ -1,0 +1,31 @@
+To create a link list node 
+    #Define a node class
+
+class Node:
+    def __init__(self, data):
+        self.data = data    # store the data
+        self.next = None    # pointer to the next node (default is None)
+
+# Step 2: Define the LinkedList class
+class LinkedList:
+    def __init__(self):
+        self.head = None    # start of the list
+
+    # Step 3: Method to add a new node at the end
+    def append(self, data):
+        new_node = Node(data)
+        if not self.head:              # if list is empty
+            self.head = new_node
+            return
+        current = self.head
+        while current.next:           # traverse to the end
+            current = current.next
+        current.next = new_node       # attach new node
+
+    # Step 4: Print all elements in the list
+    def display(self):
+        current = self.head
+        while current:
+            print(current.data, end=" -> ")
+            current = current.next
+        print("None")

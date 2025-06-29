@@ -1,1 +1,48 @@
 Python OOP concepts, including classes, objects, and real-world examples
+
+Classes
+    classes are blueprint for developing objects to avoid repetitions and increase scalability
+
+    syntax:
+    class name:
+        def __init__(self, other arugments you want to add) # init creates the object for a class and intialize the attrubites 
+        # self is a varabile that allows you to add attributres to the object being created
+            # self could be a speific superhero or a dog or a car etc. Also other methods have access to self to referred to the specifc object.
+        # example self.car = car which is assign to that specific object
+
+Methods:
+    Are functions define in a class
+    ex: def __init__(self, other arugments you want to add):
+    in pyhton the init is the constructor which is to create or initalzize the object
+    they are called in the main using dot notation
+
+Attribute:
+    variables assocates with the object
+    ex: # example self.car = car which is assign to that specific object
+
+    accessing attrubites out side of the class use dot notation
+    ex: print(ironman.power) 
+    and modify value through the same way you access it just set it equal.
+
+
+Object:
+    we created the object by calling the class and passing the right arugments 
+    ex: ironman = superhero("ironman, "repluse cannon", 6, 8) # health is 6 and power level is 8 and class name is superhero
+
+
+
+Encapulation:
+    Is hiding the interal details of how something works and only showing what is need
+    By default all attributes or methods are public default
+
+    protected attributes can not be access outside the class, only inside the class or subclass and it denoted with a single underscore
+        ex: self._name
+
+    to access a protected attrubites access the pubic methods
+    to access a protected method use the public Method
+
+
+    Private not accessable outside the class or the child class
+    denoted as double underscores
+
+    
