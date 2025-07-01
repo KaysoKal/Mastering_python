@@ -44,5 +44,17 @@ Encapulation:
 
     Private not accessable outside the class or the child class
     denoted as double underscores
+    you can access it inside a class but it best to make a public method to access the private attribute or private method
+        which getter and setters comein in handy, setter method is updating value for the private attributes
+        Getter is to saftely read a value from a private attributes
+
+    Ways to use getter and setter 
+        @property: 
+        #KEEP IN MIND property is treates like an attribute not a function so when calling it->
+        its obj.attribute not obj.attribute()
+        Lets you define a method that can be accessed like an attribute (without parentheses).
+        Provides a cleaner, more Pythonic and efficient way to control access to private variables compared to traditional getter and setter method
+       
+
 
     
