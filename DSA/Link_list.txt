@@ -29,3 +29,10 @@ class LinkedList:
             print(current.data, end=" -> ")
             current = current.next
         print("None")
+
+
+
+# nodes 
+have 2 things have 
+value - anything strings intgers, objects
+next - the next node it points to

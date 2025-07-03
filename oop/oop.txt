@@ -12,17 +12,30 @@ Classes
 
 Methods:
     Are functions define in a class
+  instances Methods:
     ex: def __init__(self, other arugments you want to add):
     in pyhton the init is the constructor which is to create or initalzize the object
     they are called in the main using dot notation
+ 
+  Class Methods:
+    ex: is def class_method(cls): # use cls to access class attributes
+    or can use @classmethod then def class_method(cls) just more easier to read
+    and access by using dot notation in side of class or main
+
+  staticMethods:
+    Dont use cls or self just pass fucntion more of a utility function
 
 Attribute:
+  instance Attribute:
     variables assocates with the object
     ex: # example self.car = car which is assign to that specific object
 
     accessing attrubites out side of the class use dot notation
     ex: print(ironman.power) 
     and modify value through the same way you access it just set it equal.
+  
+  Classes attributes:
+    are shared across instances. You can call them by classname.classattribute 
 
 
 Object:
