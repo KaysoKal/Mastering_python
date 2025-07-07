@@ -23,7 +23,9 @@ Methods:
     and access by using dot notation in side of class or main
 
   staticMethods:
-    Dont use cls or self just pass fucntion more of a utility function
+  Static methods belong to the class, not the instance.
+  They don’t use self or cls
+  They are like utility functions that are logically related to the class.
 
 Attribute:
   instance Attribute:
@@ -70,4 +72,13 @@ Encapulation:
        
 
 
-    
+Inheritance 
+  is a subclass of a class
+    -  inherits properties and methods from a parent class
+    - useful for situation for is-a reltionship(like a animal(superclass) and the different types of animals(subclass)) and reuse code
+
+  overide a method:
+    - create a subclass, call the main and then make the same method to overide it 
+    - Super().method calls a method from parent class, used inside a subclass
+  
+
