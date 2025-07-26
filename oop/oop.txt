@@ -1,5 +1,10 @@
 Python OOP concepts, including classes, objects, and real-world examples
 
+Diffencce in class and objects 
+A class is like a blueprint (e.g., a plan for a house).
+An instance is the actual object built from that blueprint (e.g., your house).
+
+
 Classes
     classes are blueprint for developing objects to avoid repetitions and increase scalability
 
@@ -74,11 +79,53 @@ Encapulation:
 
 Inheritance 
   is a subclass of a class
-    -  inherits properties and methods from a parent class
+    -  inherits properties and methods from a parent class. class have a class parameter 
     - useful for situation for is-a reltionship(like a animal(superclass) and the different types of animals(subclass)) and reuse code
 
   overide a method:
     - create a subclass, call the main and then make the same method to overide it 
-    - Super().method calls a method from parent class, used inside a subclass
   
+  Super().
+    Calls a method from the parent class
+    Used inside a subclass
+    Often used to reuse and extend a method (like __init__)
+    Lets you add or initialize new attributes after the parent does its part
+    ex: class Hero:
+    def __init__(self, name):
+        self.name = name
 
+class FlightHero(Hero):
+    def __init__(self, name, flight_speed):
+        super().__init__(name)           # Reuses parent initialization
+        self.flight_speed = flight_speed # Adds subclass-specific attribute
+
+  
+polymorphism
+  - A code that work on different types of objects
+EXAMPLE
+
+  class Animal:
+    def __init__(self, name: str):
+        self.name = name
+    
+    def make_sound(self) -> None:
+        print("Animal is making a sound")
+  class Cat(Animal):
+    def make_sound(self):
+        print(f"{self.name} says: Meow!")
+
+#Create a common interface that takes any object of type Animal (or its subclasses) and calls their make_sound method
+def animal_sound(animal: Animal):
+    animal.make_sound()
+
+    animal = Cat("Whiskers") #since their is a class for cat it override method animal make sound
+    animal.make_sound()
+
+    animal = animal("The lion sound")
+    animal.make_sound()
+
+Dunder
+Special methods in Python that are prefixed and suffixed with double underscores (like __init__, __str__, __len__) are called "dunder methods" or more formally:
+"Dunder" stands for "double underscore"
+
+They allow you to define custom behaviors for built-in Python operations.
