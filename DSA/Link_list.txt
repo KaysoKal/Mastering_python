@@ -1,6 +1,12 @@
 To create a link list node 
     #Define a node class
 
+    You always need a Node class that contains a value and a pointer 
+    you will always need a linklist class to chain the nodes together which always contains the operations and the entry point 
+    you need a trasnvere operation 
+    core operations are adding, removing and viewing the list 
+
+    
 class Node:
     def __init__(self, data):
         self.data = data    # store the data
@@ -14,9 +20,11 @@ class LinkedList:
     # Step 3: Method to add a new node at the end
     def append(self, data):
         new_node = Node(data)
+
         if not self.head:              # if list is empty
             self.head = new_node
             return
+            
         current = self.head
         while current.next:           # traverse to the end
             current = current.next
