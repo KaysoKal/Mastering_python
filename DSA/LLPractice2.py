@@ -16,6 +16,8 @@ class LinkList:
             self.head = newNode
             return
         
+        # rule of thumb when meaniplationg existing linklist use a dummy node 
+        
         #transvering the list
         #current is the tempary nod you move through out the list we did that with head we would lose it
         # think of equal sign as pointing to something from right to left 
@@ -44,3 +46,15 @@ def main():
         
 if __name__=="__main__":
     main()
+    
+"""
+always have a head pointer to transver or modify the list 
+use dummy nodes when need for merging, inserting an reording nodes for edge cases
+travers using .next and be carefeul bc it can change the orginal strucure of the list so use temp
+when reversing the list always use three pointers 
+while condition use tq to process every node including last one 
+use node.next when wanting to attach somehting to the last node in list
+
+
+
+"""

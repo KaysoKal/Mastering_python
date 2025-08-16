@@ -1,0 +1,161 @@
+Rule-of-Thumb Guide for Solving Coding Problems
+
+1. Understand the problem fully
+   - Read carefully and identify input/output.
+   - Clarify constraints and edge cases.
+   - Example: empty inputs, very large inputs, duplicates, etc.
+
+2. Break the problem into steps
+   - Don’t try to solve everything at once.
+   - Write down subtasks or smaller functions.
+   - Example: “Traverse the list → Compare values → Merge nodes”.
+
+3. Choose the right data structure
+   - Picking the right structure simplifies the solution:
+     - Linked list → for dynamic insertion/deletion
+     - Array → for random access
+     - Hash map → for fast lookups
+     - Stack/queue → for LIFO/FIFO logic
+
+4. Use pointers/indices smartly
+   - For arrays: use indices (i, j).
+   - For linked lists: use temp pointers (current, prev, next).
+   - Keep the original reference to avoid losing data.
+
+5. Handle edge cases first
+   - Check for empty inputs, single-element inputs, and max/min values.
+   - Example in linked lists: if not head: return None.
+
+6. Think iteratively and incrementally
+   - Use l
+
+
+
+
+# Python Coding Patterns Cheat Sheet (Comprehensive)
+
+This guide shows **major data structures**, **key patterns**, and examples to learn for Python coding problems.
+
+---
+
+## 1️⃣ Arrays
+
+**Key Patterns:**
+- Two Pointers → Move pointers from both ends or in the same direction  
+  *Example:* Two Sum (sorted), Container With Most Water, Move Zeroes
+- Sliding Window → Maintain a window of elements  
+  *Example:* Longest Substring Without Repeating Characters, Maximum Sum Subarray
+- Prefix Sum / Cumulative Sum → Precompute sums  
+  *Example:* Subarray Sum Equals K
+- Hash Map / Frequency Counting → Count occurrences  
+  *Example:* Two Sum (unsorted), Majority Element
+- Sorting + Two Pointers → Sort first, then two pointers  
+  *Example:* 3Sum, Merge Intervals
+
+---
+
+## 2️⃣ Strings
+
+**Key Patterns:**
+- Sliding Window → Longest/shortest substring problems  
+- Two Pointers → Reverse strings, check palindromes  
+- Frequency Counting / Hash Map → Track duplicates or anagrams  
+- Stack / Greedy → Remove duplicates, evaluate expressions
+
+---
+
+## 3️⃣ Linked Lists
+
+**Key Patterns:**
+- Slow & Fast Pointers → Detect cycles, find middle node  
+- Merge / Split Lists → Merge sorted lists, reorder nodes  
+- Dummy Node → Simplify head/tail manipulations  
+- Reverse / Reorder → Reverse sublist, reverse entire list
+
+---
+
+## 4️⃣ Stacks
+
+**Key Patterns:**
+- Balanced Parentheses / Matching → Use stack to match elements  
+- Monotonic Stack → Track next greater/smaller elements  
+- Backtracking / Undo Operations → Store previous states  
+- DFS using Stack → Simulate recursion iteratively
+
+---
+
+## 5️⃣ Queues
+
+**Key Patterns:**
+- BFS → Level-order traversal, shortest paths  
+- Sliding Window / Fixed-size Queue → Maintain elements in a window  
+- Monotonic Queue → Track min/max efficiently  
+- Simulation / FIFO operations → Circular Queue, Recent Counter
+
+---
+
+## 6️⃣ Heaps / Priority Queues
+
+**Key Patterns:**
+- Min-Heap / Max-Heap → Get smallest/largest efficiently  
+- Kth Largest / Smallest → Maintain a heap of size k  
+- Merge K Sorted Lists → Use heap to pick smallest node  
+- Sliding Window Maximum → Use max-heap
+
+---
+
+## 7️⃣ Hash Maps / Dictionaries / Sets
+
+**Key Patterns:**
+- Counting → Frequency of elements  
+- Two Sum / Pairing → Detect pairs or complements  
+- Sliding Window with Count → Track characters in substring  
+- Grouping / Categorizing → Group Anagrams, Count Elements
+
+---
+
+## 8️⃣ Trees
+
+**Key Patterns:**
+- DFS → Preorder, Inorder, Postorder traversal  
+- BFS → Level-order traversal  
+- Recursion / Divide & Conquer → Max depth, subtree sums  
+- Binary Search Tree properties → Search, Insert, Delete efficiently
+
+---
+
+## 9️⃣ Graphs
+
+**Key Patterns:**
+- BFS → Shortest path in unweighted graph  
+- DFS → Detect cycles, connected components  
+- Topological Sort → DAG ordering  
+- Union-Find / Disjoint Set → Connected components, cycle detection  
+- Dijkstra / Bellman-Ford → Shortest paths with weights
+
+---
+
+## 10️⃣ Dynamic Programming
+
+**Key Patterns:**
+- 1D DP → Subarray, subsequence, Fibonacci, climbing stairs  
+- 2D DP → Matrix problems, grid paths, edit distance  
+- Memoization → Cache recursive calls  
+- Bottom-Up / Tabulation → Iterative DP
+
+---
+
+## 11️⃣ Miscellaneous
+
+- Bit Manipulation → XOR, bitmask, subset generation  
+- Sliding Window → Strings & arrays for sums, counts, max/min  
+- Greedy → Interval scheduling, activity selection  
+- Backtracking → Permutations, combinations, Sudoku, N-Queens
+
+---
+
+💡 **Extra Tip:**  
+- Focus on **patterns, not unique problems**.  
+- Once you recognize the underlying pattern, solving new problems becomes faster and more systematic.
+
+
