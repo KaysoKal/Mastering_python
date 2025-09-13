@@ -58,6 +58,7 @@ Data collection types
 - But mutable
 
     dictionaries
+- are like sets but have key values 
 - as known as maps, hashmaps because you mapping keys to values 
 - ordered, changable and no Duplicates for key values but Duplicates for values and values can be any data collection
 - syntax : my_dict = {} ; my_dict = {key: value, key: value}

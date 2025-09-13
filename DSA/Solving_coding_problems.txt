@@ -30,7 +30,16 @@ Rule-of-Thumb Guide for Solving Coding Problems
    - Use l
 
 
-
+Arrays: Two Pointers → Sliding Window → Prefix Sum → Hash Map → Sorting + Two Pointers
+Strings: Sliding Window → Two Pointers → Hash Map → Stack/Greedy
+Linked Lists: Slow & Fast → Merge/Split → Dummy Node → Reverse/Reorder
+Stacks: Balanced Parentheses → Monotonic Stack → Backtracking → DFS
+Queues: BFS → Sliding Window → Monotonic Queue → Simulation
+Heaps: Min/Max Heap → Kth Element → Merge K Lists → Sliding Window Max
+Hash Maps: Counting → Pairing → Sliding Window → Grouping -> Frequency
+Trees: DFS → BFS → Recursion → BST Properties
+Graphs: BFS → DFS → Topological Sort → Union-Find → Weighted Shortest Path
+Dynamic Programming: 1D → 2D → Memoization → Bottom-Up
 
 # Python Coding Patterns Cheat Sheet (Comprehensive)
 
@@ -38,119 +47,189 @@ This guide shows **major data structures**, **key patterns**, and examples to le
 
 ---
 
-## 1️⃣ Arrays
+1️⃣ Arrays
 
-**Key Patterns:**
-- Two Pointers → Move pointers from both ends or in the same direction  
-  *Example:* Two Sum (sorted), Container With Most Water, Move Zeroes
-- Sliding Window → Maintain a window of elements  
-  *Example:* Longest Substring Without Repeating Characters, Maximum Sum Subarray
-- Prefix Sum / Cumulative Sum → Precompute sums  
-  *Example:* Subarray Sum Equals K
-- Hash Map / Frequency Counting → Count occurrences  
-  *Example:* Two Sum (unsorted), Majority Element
-- Sorting + Two Pointers → Sort first, then two pointers  
-  *Example:* 3Sum, Merge Intervals
+Key Patterns:
 
----
+Two Pointers → Move pointers from both ends or in the same direction
+LeetCode clue: Two Sum (sorted), Container With Most Water, Move Zeroes
 
-## 2️⃣ Strings
+Sliding Window → Maintain a window of elements for sum/length checks
+LeetCode clue: Longest Substring Without Repeating Characters, Maximum Sum Subarray
 
-**Key Patterns:**
-- Sliding Window → Longest/shortest substring problems  
-- Two Pointers → Reverse strings, check palindromes  
-- Frequency Counting / Hash Map → Track duplicates or anagrams  
-- Stack / Greedy → Remove duplicates, evaluate expressions
+Prefix Sum / Cumulative Sum → Precompute sums for fast subarray queries
+LeetCode clue: Subarray Sum Equals K, Range Sum Query
 
----
+Hash Map / Frequency Counting → Count occurrences efficiently
+LeetCode clue: Two Sum (unsorted), Majority Element
 
-## 3️⃣ Linked Lists
+Sorting + Two Pointers → Sort first, then use two pointers to find pairs/triplets
+LeetCode clue: 3Sum, Merge Intervals
 
-**Key Patterns:**
-- Slow & Fast Pointers → Detect cycles, find middle node  
-- Merge / Split Lists → Merge sorted lists, reorder nodes  
-- Dummy Node → Simplify head/tail manipulations  
-- Reverse / Reorder → Reverse sublist, reverse entire list
+2️⃣ Strings
 
----
+Key Patterns:
 
-## 4️⃣ Stacks
+Sliding Window → Find longest/shortest substrings meeting a condition
+LeetCode clue: Minimum Window Substring, Longest Substring Without Repeating Characters
 
-**Key Patterns:**
-- Balanced Parentheses / Matching → Use stack to match elements  
-- Monotonic Stack → Track next greater/smaller elements  
-- Backtracking / Undo Operations → Store previous states  
-- DFS using Stack → Simulate recursion iteratively
+Two Pointers → Reverse strings, check palindromes, compare characters
+LeetCode clue: Valid Palindrome, Reverse Words in a String
 
----
+Frequency Counting / Hash Map → Track duplicates, anagrams, or character counts
+LeetCode clue: Group Anagrams, Find All Anagrams in a String
 
-## 5️⃣ Queues
+Stack / Greedy → Remove duplicates, validate parentheses, evaluate expressions
+LeetCode clue: Remove Duplicate Letters, Basic Calculator
 
-**Key Patterns:**
-- BFS → Level-order traversal, shortest paths  
-- Sliding Window / Fixed-size Queue → Maintain elements in a window  
-- Monotonic Queue → Track min/max efficiently  
-- Simulation / FIFO operations → Circular Queue, Recent Counter
+3️⃣ Linked Lists
 
----
+Key Patterns:
 
-## 6️⃣ Heaps / Priority Queues
+Slow & Fast Pointers → Detect cycles, find middle node, detect cycle start (Floyd’s algorithm)
+LeetCode clue: Linked List Cycle, Middle of Linked List
 
-**Key Patterns:**
-- Min-Heap / Max-Heap → Get smallest/largest efficiently  
-- Kth Largest / Smallest → Maintain a heap of size k  
-- Merge K Sorted Lists → Use heap to pick smallest node  
-- Sliding Window Maximum → Use max-heap
+Merge / Split Lists → Merge two sorted lists, split at middle or by condition, reorder nodes
+LeetCode clue: Merge Two Sorted Lists, Reorder List
 
----
+Dummy Node / Prev-Pointer Traversal → Simplifies head/tail manipulations, remove nodes, remove duplicates
+LeetCode clue: Remove Linked List Elements, Remove Duplicates from Sorted List
 
-## 7️⃣ Hash Maps / Dictionaries / Sets
+Reverse / Reorder → Reverse entire list, reverse sublists, reorder in-place
+LeetCode clue: Reverse Linked List, Reverse Linked List II, Odd-Even Linked List
 
-**Key Patterns:**
-- Counting → Frequency of elements  
-- Two Sum / Pairing → Detect pairs or complements  
-- Sliding Window with Count → Track characters in substring  
-- Grouping / Categorizing → Group Anagrams, Count Elements
+Two-Pointer Head Switching → Find intersection node of two linked lists by reference; switch pointers to other list’s head when reaching end to equalize path length
 
----
+4️⃣ Stacks
 
-## 8️⃣ Trees
+Key Patterns:
 
-**Key Patterns:**
-- DFS → Preorder, Inorder, Postorder traversal  
-- BFS → Level-order traversal  
-- Recursion / Divide & Conquer → Max depth, subtree sums  
-- Binary Search Tree properties → Search, Insert, Delete efficiently
+Balanced Parentheses / Matching → Use stack to match elements
+LeetCode clue: Valid Parentheses
 
----
+Monotonic Stack → Track next greater/smaller elements efficiently
+LeetCode clue: Daily Temperatures, Next Greater Element
 
-## 9️⃣ Graphs
+Backtracking / Undo Operations → Store previous states
+LeetCode clue: Remove Duplicate Letters
 
-**Key Patterns:**
-- BFS → Shortest path in unweighted graph  
-- DFS → Detect cycles, connected components  
-- Topological Sort → DAG ordering  
-- Union-Find / Disjoint Set → Connected components, cycle detection  
-- Dijkstra / Bellman-Ford → Shortest paths with weights
+DFS using Stack → Simulate recursion iteratively
+LeetCode clue: Binary Tree Traversal Iterative
 
----
+5️⃣ Queues
 
-## 10️⃣ Dynamic Programming
+Key Patterns:
 
-**Key Patterns:**
-- 1D DP → Subarray, subsequence, Fibonacci, climbing stairs  
-- 2D DP → Matrix problems, grid paths, edit distance  
-- Memoization → Cache recursive calls  
-- Bottom-Up / Tabulation → Iterative DP
+BFS → Level-order traversal, shortest paths in unweighted graph
+LeetCode clue: Binary Tree Level Order Traversal, Shortest Path in Grid
 
----
+Sliding Window / Fixed-size Queue → Maintain window elements
+LeetCode clue: Sliding Window Maximum
 
-## 11️⃣ Miscellaneous
+Monotonic Queue → Track min/max efficiently
+LeetCode clue: Sliding Window Maximum, Longest Continuous Subarray
 
-- Bit Manipulation → XOR, bitmask, subset generation  
-- Sliding Window → Strings & arrays for sums, counts, max/min  
-- Greedy → Interval scheduling, activity selection  
-- Backtracking → Permutations, combinations, Sudoku, N-Queens
+Simulation / FIFO operations → Circular Queue, Recent Counter
+LeetCode clue: Design Circular Queue, Recent Counter
+
+6️⃣ Heaps / Priority Queues
+
+Key Patterns:
+
+Min-Heap / Max-Heap → Efficiently get smallest/largest elements
+LeetCode clue: Kth Largest Element in an Array
+
+Kth Largest / Smallest → Maintain heap of size k
+LeetCode clue: Kth Largest Element in an Array
+
+Merge K Sorted Lists → Use heap to pick the smallest node
+LeetCode clue: Merge K Sorted Lists
+
+Sliding Window Maximum → Use max-heap
+LeetCode clue: Sliding Window Maximum
+
+7️⃣ Hash Maps / Dictionaries / Sets
+
+Key Patterns:
+
+Counting → Frequency of elements
+LeetCode clue: Majority Element, Top K Frequent Elements
+
+Two Sum / Pairing → Detect pairs or complements
+LeetCode clue: Two Sum, Two Sum II
+
+Sliding Window with Count → Track characters in substring/window
+LeetCode clue: Minimum Window Substring
+
+Grouping / Categorizing → Group anagrams, count occurrences
+LeetCode clue: Group Anagrams, Count Elements
+
+8️⃣ Trees
+
+Key Patterns:
+
+DFS → Preorder, Inorder, Postorder traversals
+LeetCode clue: Binary Tree Inorder Traversal
+
+BFS → Level-order traversal
+LeetCode clue: Binary Tree Level Order Traversal
+
+Recursion / Divide & Conquer → Max depth, subtree sums
+LeetCode clue: Maximum Depth of Binary Tree, Path Sum
+
+Binary Search Tree properties → Search, Insert, Delete efficiently
+LeetCode clue: Validate BST, Lowest Common Ancestor of BST
+
+9️⃣ Graphs
+
+Key Patterns:
+
+BFS → Shortest path in unweighted graph
+LeetCode clue: Number of Islands, Shortest Path in Grid
+
+DFS → Detect cycles, connected components
+LeetCode clue: Number of Islands, Course Schedule
+
+Topological Sort → DAG ordering
+LeetCode clue: Course Schedule II
+
+Union-Find / Disjoint Set → Connected components, cycle detection
+LeetCode clue: Redundant Connection
+
+Dijkstra / Bellman-Ford → Shortest paths with weights
+LeetCode clue: Network Delay Time
+
+10️⃣ Dynamic Programming
+
+Key Patterns:
+
+1D DP → Subarray/subsequence problems, Fibonacci, climbing stairs
+LeetCode clue: Climbing Stairs, House Robber
+
+2D DP → Matrix/grid problems, edit distance
+LeetCode clue: Unique Paths, Edit Distance
+
+Memoization → Cache recursive calls
+LeetCode clue: Fibonacci, Decode Ways
+
+Bottom-Up / Tabulation → Iterative DP
+LeetCode clue: Coin Change, Minimum Path Sum
+
+11️⃣ Miscellaneous
+
+Key Patterns:
+
+Bit Manipulation → XOR, bitmasking, subset generation
+LeetCode clue: Single Number, Subsets
+
+Sliding Window → Strings & arrays for sums, counts, max/min
+LeetCode clue: Maximum Average Subarray, Minimum Window Substring
+
+Greedy → Interval scheduling, activity selection
+LeetCode clue: Non-overlapping Intervals, Jump Game
+
+Backtracking → Permutations, combinations, Sudoku, N-Queens
+LeetCode clue: Permutations, N-Queens, Sudoku Solver
 
 ---
 
