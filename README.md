@@ -49,7 +49,7 @@ This repository is dedicated to my journey in mastering **networking, cloud infr
 
 ---
 
-Learning Path / Repository Structure
+### Learning Path / Repository Structure
 
 1. `linux/`: Linux CLI, file system navigation, process management, permissions, package management, and Bash scripting.  
 2. `python-syntax/`: Python fundamentals and OOP concepts.  
