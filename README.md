@@ -7,13 +7,14 @@
  - **Automation and Scripting**: Writing Python scripts to automate everyday tasks and solve real-world problems.
  
  ## Topics Covered:
- - **Python Syntax**: Variables, data types, control flow (if/else, loops), functions, and more.
- - **Object-Oriented Programming (OOP)**: Classes, objects, inheritance, polymorphism, encapsulation, and abstraction.
+ - **Python Syntax**: Variables, data types, control flow (if/else, loops), functions, Classes, objects, inheritance, polymorphism, encapsulation, and abstraction.
  - **Automation and Scripting**: Writing Python scripts for web scraping, file manipulation, task automation, and more.
  - **Python Libraries**: Using libraries such as `os`, `sys`, `shutil`, `requests`, and `beautifulsoup` for scripting and automation.
  
  ## Structure of this Repository:
- - `python-syntax/`: Basic Python syntax and small exercises to strengthen core concepts.
- - `oop/`: Python OOP concepts, including classes, objects, and real-world examples.
+ - `python-syntax/`: Basic Python syntax and small exercises to strengthen core concepts & python OOP.
  - `automation/`: Python scripts for automating tasks, web scraping, and working with files.
  - `projects/`: Real-world projects and scripts for practice and learning.
+ - `DSA/`: Learning data structures and algorithms through code, solving problems, and implementing them from scratch.
+ - `sql/`: Practice with SQL basics and intermediate concepts — creating schemas, writing queries, joins, subqueries, indexes, and optimization exercises.
+ - `linux/`: Linux command-line practice, shell scripting, file system navigation, permissions, process management, and automation with bash scripts.
